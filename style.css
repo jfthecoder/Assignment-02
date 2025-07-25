@@ -140,3 +140,147 @@ body {
         margin-bottom: 20px;
     }
 }
+
+/* Plants Section */
+.plants-section {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-title .highlight {
+    color: #f06543;
+}
+
+.section-subtitle {
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 14px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    background: #f06543;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.product-card button:hover {
+    background: #d95437;
+}
+
+.plants-section {
+    max-width: 1140px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.plants-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.plants-header p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Grid container */
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Plant Card */
+.plant-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+}
+
+.plant-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.plant-card h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+}
+
+.plant-card p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.plant-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ✅ Responsive for Mobile */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .plants-header h2 {
+        font-size: 28px;
+    }
+
+    .plants-header p {
+        font-size: 16px;
+    }
+}
