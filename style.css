@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f9fbff;
+}
+
+header {
+    margin-top: 40px;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.navbar {
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 135px;
+    height: 82px;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:nth-child(2),
+.menu a:nth-child(3) {
+    color: #8987A1;
+}
+
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+.cart img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Banner Section */
+.banner {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px 15px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.banner-text {
+    flex: 1;
+    min-width: 280px;
+    padding-bottom: 30px;
+}
+
+.banner-text h1 {
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.banner-text .highlight {
+    color: #f06543;
+}
+
+.banner-text p {
+    color: #666;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.banner-img {
+    flex: 1;
+    text-align: center;
+    min-width: 280px;
+    width: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Card Section */
+.plants-section {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-title .highlight {
+    color: #f06543;
+}
+
+.section-subtitle {
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 14px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    background: #f06543;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.product-card button:hover {
+    background: #d95437;
+}
+
+/* Flower & Plants Lover */
+.lover-section {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    margin: 60px auto;
+    flex-wrap: wrap;
+}
+
+.lover-img {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+}
+
+.badge-overlay {
+    position: absolute;
+    top: -80px;
+    right: -60px;
+    width: 200px;
+    height: auto;
+    z-index: 10;
+}
+
+.lover-content {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.lover-content h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.lover-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+    font-size: 22px;
+}
+
+
+
+/* Responsive Part Start */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        text-align: left;
+        align-items: flex-start;
+        text-align: left;
+        padding: 20px 15px;
+    }
+
+    .banner-text h1 {
+        font-size: 28px;
+    }
+
+    .banner-text p {
+        font-size: 13px;
+    }
+
+    .banner-img {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 20px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        padding: 0;
+    }
+
+    .plants-section {
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+
+    .lover-section{
+        margin-bottom: 20px;
+    }
+
+    .lover-content h2 {
+        font-size: 24px;
+    }
+
+    .lover-content ul {
+        font-size: 14px;
+    }
+
+    .badge-overlay {
+        display: none;
+    }
+}
